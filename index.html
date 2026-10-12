@@ -30,8 +30,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#" onclick="switchView('profile')">
-                <div class="rounded-3 p-2 me-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 50px; height: 50px;">
-                    
+                <div class="rounded-3 p-2 me-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 50px; height: 50px;">                    
                     <img src="img/logo-pavicon-removebg-preview.png" alt="Logo PT. Sahaja Inti Niaga" class="img-fluid" style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
                 <span>PT. SAHAJA INTI NIAGA</span>
@@ -42,13 +41,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-lg-center gap-lg-2 mt-3 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active px-3 py-2 rounded" href="#" data-target="profile" onclick="switchView('profile')">Company Profile</a>
+                        <a class="nav-link active px-3 py-2 rounded" href="#" data-target="profile" onclick="switchView('profile')" >Company Profile</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link px-3 py-2 rounded" href="#" data-target="about" onclick="switchView('about')">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3 py-2 rounded" href="#" data-target="about" onclick="switchView('whychooseus')">Why Choose Us?</a>
+                        <a class="nav-link px-3 py-2 rounded" href="#" data-target="why-choose-us" onclick="switchView('why-choose-us')">Why Choose Us?</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link px-3 py-2 rounded" href="#" data-target="operational" onclick="switchView('operational')">Operational</a>
@@ -288,6 +287,75 @@ serta pengamanan berstandar industri modern.</p>
             </div>
         </section>
 
+        <!-- Section Why Choose Us -->
+        <section id="view-why-choose-us" class="view-section py-5">
+            <div class="container pt-1 pb-4">
+                <!-- Judul Header -->
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold display-5">Why Choose Us</h2>
+                    <p class="text-muted col-lg-6 mx-auto">Alasan utama mengapa PT. SAHAJA INTI NIAGA menjadi mitra terpercaya      bagi korporasi dan institusi terkemuka.</p>
+                </div>
+            
+                <!-- Grid Kartu Keunggulan -->
+                <div class="row g-4">
+                    <!-- Poin 1 -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 h-100 card-hover bg-white">
+                            <div class="text-primary fs-1 mb-3"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h4 class="fw-bold mb-3">Rekrutmen Selektif & Bebas Risiko</h4>
+                            <p class="text-muted mb-0">Seluruh personil melalui verifikasi identitas, rekam jejak kriminal, pemeriksaan medis, serta tes psikologi kerja</p>
+                        </div>
+                    </div>
+                
+                    <!-- Poin 2 -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 h-100 card-hover bg-white">
+                            <div class="text-success fs-1 mb-3"><i class="fa-solid fa-user-tie"></i></div>
+                            <h4 class="fw-bold mb-3">Kepatuhan Legal & Ketenagakerjaan (100% Compliance)</h4>
+                            <p class="text-muted mb-0">Penjaminan upah sesuai regulasi (UMK/UMR), kepesertaan BPJS Ketenagakerjaan & BPJS Kesehatan, perlindungan THR, dan perjanjian kerja yang sah. Klien terbebas dari sengketa hubungan industrial langsung.</p>
+                        </div>
+                    </div>
+                
+                    <!-- Poin 3 -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 h-100 card-hover bg-white">
+                            <div class="text-warning fs-1 mb-3"><i class="fa-solid fa-headset"></i></div>
+                            <h4 class="fw-bold mb-3">Supervisi Berlapis (Layered Supervision) :</h4>
+                            <p class="text-muted mb-0">Penempatan Team Leader / Supervisor lapangan yang melakukan audit berkala, briefing harian (morning briefing), dan laporan kinerja bulanan.</p>
+                        </div>
+                    </div>
+                
+                    <!-- Poin 4 -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 h-100 card-hover bg-white">
+                            <div class="text-info fs-1 mb-3"><i class="fa-solid fa-puzzle-piece"></i></div>
+                            <h4 class="fw-bold mb-3">Tenaga Pengganti Cepat (Reliever Standby)</h4>
+                            <p class="text-muted mb-0">Garansi penyediaan personil pengganti yang siap siaga dalam waktu singkat jika personil bertugas
+berhalangan hadir..</p>
+                        </div>
+                    </div>
+                
+                    <!-- Poin 5 -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 h-100 card-hover bg-white">
+                            <div class="text-danger fs-1 mb-3"><i class="fa-solid fa-chart-line"></i></div>
+                            <h4 class="fw-bold mb-3">Berorientasi Pertumbuhan</h4>
+                            <p class="text-muted mb-0">Setiap rancangan teknologi dan layanan dirancang khusus guna mendongkrak efisiensi biaya, skalabilitas, serta profitabilitas perusahaan.</p>
+                        </div>
+                    </div>
+                
+                    <!-- Poin 6 -->
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 h-100 card-hover bg-white">
+                            <div class="text-secondary fs-1 mb-3"><i class="fa-solid fa-handshake-angle"></i></div>
+                            <h4 class="fw-bold mb-3">Kustomisasi SOP Fasilitas</h4>
+                            <p class="text-muted mb-0">Prosedur operasional disesuaikan secara detail dengan peraturan internal dan budaya kerja gedung klien</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="view-operational" class="view-section py-5">
             <div class="container py-4">
                 <div class="text-center max-w-700 mx-auto mb-5">
@@ -304,8 +372,7 @@ serta pengamanan berstandar industri modern.</p>
                             <p class="text-muted">Kantor pusat dan pusat data utama kami berlokasi strategis di kawasan bisnis Jakarta, didukung cabang regional:</p>
                             <ul class="list-group list-group-flush mb-0">
                                 <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
-                                    <span><i class="fa-solid fa-building me-2 text-muted"></i> Kantor Pusat Jakarta Selatan</span>
-                                    <span class="badge bg-primary rounded-pill">HQ & Data Center</span>
+                                    <span><i class="text-muted"></i> <img src="img/1.jpg" class="img-fluid" style="object-fit: contain; width: 100%; height: 100%;"></span>
                                 </li>
                                 <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
                                     <span><i class="fa-solid fa-building me-2 text-muted"></i> Kantor Cabang Surabaya</span>
@@ -346,7 +413,7 @@ serta pengamanan berstandar industri modern.</p>
                     <div class="row g-4">
                         <div class="col-md-4">
                             <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-                                <img src="https://placehold.co/400x250/334155/ffffff?text=Tier-3+Data+Center" class="card-img-top" alt="Data Center">
+                                <img src="img/1.jpg" class="card-img-top" alt="Data Center">
                                 <div class="card-body p-4">
                                     <h5 class="fw-bold">Tier-3 Data Center</h5>
                                     <p class="text-muted small mb-0">Infrastruktur server mandiri dengan redundansi daya dan proteksi fisik maksimal.</p>
@@ -355,7 +422,7 @@ serta pengamanan berstandar industri modern.</p>
                         </div>
                         <div class="col-md-4">
                             <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-                                <img src="https://placehold.co/400x250/475569/ffffff?text=R%26D+Software+Lab" class="card-img-top" alt="Lab">
+                                <img src="img/2.jpg" class="card-img-top" alt="Lab">
                                 <div class="card-body p-4">
                                     <h5 class="fw-bold">R&D Software Lab</h5>
                                     <p class="text-muted small mb-0">Ruang riset pengembangan algoritma kecerdasan buatan, keamanan siber, dan QA otomatis.</p>
@@ -364,7 +431,7 @@ serta pengamanan berstandar industri modern.</p>
                         </div>
                         <div class="col-md-4">
                             <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-                                <img src="https://placehold.co/400x250/64748b/ffffff?text=Modern+Workspace" class="card-img-top" alt="Workspace">
+                                <img src="img/3.jpg" class="card-img-top" alt="Workspace">
                                 <div class="card-body p-4">
                                     <h5 class="fw-bold">Collaborative Workspace</h5>
                                     <p class="text-muted small mb-0">Kantor modern yang didesain untuk kenyamanan tim teknis dalam berkolaborasi bersama klien.</p>
@@ -569,7 +636,7 @@ serta pengamanan berstandar industri modern.</p>
                                     </div>
                                     <div>
                                         <h6 class="fw-bold mb-1">Email Resmi</h6>
-                                        <p class="text-muted small mb-0">info@globalsolusi.co.id</p>
+                                        <p class="text-muted small mb-0">anggifauzdan01@gmail.com</p>
                                     </div>
                                 </li>
                             </ul>
@@ -598,12 +665,12 @@ serta pengamanan berstandar industri modern.</p>
             <div class="row g-4 mb-4">
                 <div class="col-lg-4">
                     <a class="navbar-brand text-white-50 d-flex align-items-center mb-3" href="#">
-                        <div class="bg-primary text-white rounded p-2 me-2 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
-                            <i class="fa-solid fa-cube fa-xs"></i>
-                        </div>
-                        <span class="fs-5">PT. SAHAJA INTI NIAGA</span>
+                        <div class="rounded-3 p-2 me-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 50px; height: 50px;">                    
+                    <img src="img/logo-pavicon-removebg-preview.png" alt="Logo PT. Sahaja Inti Niaga" class="img-fluid" style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+                        <span class="text-white fs-5">PT. SAHAJA INTI NIAGA</span>
                     </a>
-                    <p class="small text-whitemb-3">Mitra terpercaya transformasi digital korporat dengan standar keamanan global dan dedikasi profesional tinggi.</p>
+                    <p class="small text-white">Mitra terpercaya transformasi digital korporat dengan standar keamanan global dan dedikasi profesional tinggi.</p>
                     <div class="d-flex gap-3">
                         <a href="#" class="text-white fs-5"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="#" class="text-white fs-5"><i class="fa-brands fa-instagram"></i></a>
@@ -612,11 +679,11 @@ serta pengamanan berstandar industri modern.</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-6">
-                    <h6 class="text-white-50 fw-bold mb-3">Navigasi</h6>
+                    <h6 class="text-white fw-bold mb-3">Navigasi</h6>
                     <ul class="list-unstyled small mb-0 d-flex flex-column gap-2">
                         <li><a href="#" class="text-white text-decoration-none" onclick="switchView('profile')">Profile</a></li>
                         <li><a href="#" class="text-white text-decoration-none" onclick="switchView('about')">About Us</a></li>
-                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('about')">Why Choose Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('why-choose-us')">Why Choose Us</a></li>
                         <li><a href="#" class="text-white text-decoration-none" onclick="switchView('operational')">Operational</a></li>
                         <li><a href="#" class="text-white text-decoration-none" onclick="switchView('product')">Product</a></li>
                         <li><a href="#" class="text-white text-decoration-none" onclick="switchView('contact')">Hubungi Kami</a></li>
