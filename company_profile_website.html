@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. SAHAJA INTI NIAGA - Company Profile</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<link rel="icon" type="image/png" href="img/logo-pavicon-removebg-preview.png">
+<body>
+
+    <div id="customAlert" class="custom-alert-box alert alert-success alert-dismissible fade show border-0 py-3" role="alert">
+        <div class="d-flex align-items-center">
+            <i class="fa-solid fa-circle-check fs-4 me-3 text-success"></i>
+            <div>
+                <strong class="d-block text-dark">Informasi</strong>
+                <span id="alertMessage" class="small text-muted">Pesan berhasil dikirim!</span>
+            </div>
+            <button type="button" class="btn-close ms-auto" onclick="hideCustomAlert()"></button>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#" onclick="switchView('profile')">
+                <div class="rounded-3 p-2 me-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 50px; height: 50px;">
+                    
+                    <img src="img/logo-pavicon-removebg-preview.png" alt="Logo PT. Sahaja Inti Niaga" class="img-fluid" style="object-fit: contain; width: 100%; height: 100%;">
+                </div>
+                <span>PT. SAHAJA INTI NIAGA</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-lg-2 mt-3 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 py-2 rounded" href="#" data-target="profile" onclick="switchView('profile')">Company Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded" href="#" data-target="about" onclick="switchView('about')">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded" href="#" data-target="about" onclick="switchView('whychooseus')">Why Choose Us?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded" href="#" data-target="operational" onclick="switchView('operational')">Operational</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-2 rounded" href="#" data-target="product" onclick="switchView('product')">Product</a>
+                    </li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="btn btn-primary px-4 py-2 rounded-pill shadow-sm" href="#" data-target="contact" onclick="switchView('contact')">Hubungi Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="view-profile" class="view-section active">
+            <!-- Hero Cover Banner -->
+            <!-- nav>
+             <div class="hero-section text-center text-lg-start">
+                <div class="container py-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 mb-5 mb-lg-0">
+                            <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25 px-3 py-2 rounded-pill mb-3 fw-semibold">
+                                <i class="fa-solid fa-shield-halved me-1"></i> Mitra Teknologi Terpercaya Enterprise
+                            </span>
+                            <h1 class="display-4 fw-bold mb-4 text-white lh-base">Transformasi Digital untuk Masa Depan Bisnis Anda</h1>
+                            <p class="lead text-light opacity-85 mb-4">PT. Global Solusi Teknologi menghadirkan inovasi perangkat lunak kelas enterprise, infrastruktur cloud handal, dan keamanan siber tingkat lanjut untuk akselerasi pertumbuhan bisnis.</p>
+                            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                                <button class="btn btn-primary btn-lg px-4 rounded-pill shadow" onclick="switchView('product')">Jelajahi Produk</button>
+                                <button class="btn btn-outline-light btn-lg px-4 rounded-pill" onclick="switchView('contact')">Konsultasi Gratis</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 text-center">
+                            <div class="p-4 bg-white bg-opacity-10 backdrop-blur rounded-4 border border-white border-opacity-15 shadow-lg">
+                                <i class="fa-solid fa-server text-primary display-1 mb-3"></i>
+                                <h3 class="h4 fw-bold text-white mb-2">Enterprise Grade 99.9%</h3>
+                                <p class="text-light opacity-75 mb-0 small">Menjamin ketersediaan sistem penuh dengan standar keamanan internasional ISO 27001.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </nav -->
+            
+            <section id="home" class="position-relative text-white overflow-hidden py-5">
+            <!-- Gambar Header -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden">
+                <!-- TAMBAHKAN style="filter: brightness(0.4);" PADA TAG <img> -->
+                <img src="img/header.jpg" 
+                     alt="Cover Header" 
+                     class="w-100 h-100 object-fit-cover"
+                     style="filter: brightness(0.4);">
+
+                <!-- Overlay bisa tetap dipakai atau dihilangkan -->
+                <div class="position-absolute top-0 start-0 w-100 h-100"></div>
+            </div>
+        
+            <!-- Konten Teks -->
+            <div class="container position-relative py-5 my-5 text-center">
+                <h1 class="display-3 fw-bold">Selamat Datang di <p>PT. SAHAJA INTI NIAGA</p> </h1>
+                <p class="lead"> Perusahaan penyedia jasa alih daya (outsourcing) terintegrasi yang berfokus pada layanan Total Facility & Industrial  operational Support  yang mencakup seluruh kebutuhan tenaga kerja dan pemeliharaan operasional kantor hingga pabrik.</p>
+                <button class="btn btn-primary btn-lg px-4 rounded-pill shadow" onclick="switchView('product')">Jelajahi Produk</button>
+                <button class="btn btn-outline-light btn-lg px-4 rounded-pill" onclick="switchView('contact')">Konsultasi Gratis</button>
+            </div>
+            </section>
+
+            <!-- Statistics Bar -->
+            <div class="bg-white py-5 shadow-sm">
+                <div class="container">
+                    <div class="row text-center g-4">
+                        <div class="col-md-3 col-6">
+                            <div class="p-3">
+                                <h2 class="display-5 fw-bold text-primary mb-1">10+</h2>
+                                <p class="text-muted mb-0 fw-medium">Tahun Pengalaman</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="p-3">
+                                <h2 class="display-5 fw-bold text-primary mb-1">250+</h2>
+                                <p class="text-muted mb-0 fw-medium">Klien Korporat</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="p-3">
+                                <h2 class="display-5 fw-bold text-primary mb-1">400+</h2>
+                                <p class="text-muted mb-0 fw-medium">Proyek Selesai</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="p-3">
+                                <h2 class="display-5 fw-bold text-primary mb-1">50+</h2>
+                                <p class="text-muted mb-0 fw-medium">Tenaga Ahli IT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CEO Welcome Message -->
+            <div class="container py-5 my-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                            <img src="https://placehold.co/600x400/cbd5e1/475569?text=CEO+&+Management" alt="CEO" class="img-fluid rounded-4 shadow-sm">
+                            <div class="position-absolute bottom-0 start-0 m-3 bg-white p-3 rounded-3 shadow border">
+                                <p class="mb-0 fw-bold small">"Inovasi teknologi adalah penggerak utama efisiensi korporat modern."</p>
+                                <small class="text-muted">— Hendra Wijaya, CEO</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="text-primary fw-bold text-uppercase tracking-wider small">Sambutan Pimpinan</span>
+                        <h2 class="fw-bold mb-3 mt-1">Membangun Ekosistem Digital yang Tangguh dan Efisien</h2>
+                        <p class="text-muted">Sejak didirikan pada tahun 2016, PT. SAHAJA INTI NIAGA berkomitmen untuk menjadi mitra strategis dalam setiap fase digitalisasi perusahaan di Indonesia.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2 d-flex align-items-center"><i class="fa-solid fa-check text-primary me-2"></i> Solusi disesuaikan dengan kebutuhan spesifik industri</li>
+                            <li class="mb-2 d-flex align-items-center"><i class="fa-solid fa-check text-primary me-2"></i> Dukungan teknis purna jual 24/7</li>
+                            <li class="mb-2 d-flex align-items-center"><i class="fa-solid fa-check text-primary me-2"></i> Tim engineer bersertifikasi internasional</li>
+                        </ul>
+                        <button class="btn btn-outline-dark rounded-pill px-4" onclick="switchView('about')">Pelajari Tentang Kami</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="view-about" class="view-section py-5">
+            <div class="container py-4">
+                <div class="text-center max-w-700 mx-auto mb-5">
+                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-pill fw-semibold mb-2" style="font-size: 2rem;">Tentang Kami</span>
+                    <h2 class="fw-bold display-6">Mengenal Lebih Dekat PT. Global Solusi Teknologi</h2>
+                    <p class="text-muted">PT. SAHAJA INTI NIAGA adalah perusahaan penyedia jasa alih daya (outsourcing) terintegrasi yang berfokus pada layanan Total Facility & Industrial Operational Support  yang mencakup seluruh kebutuhan tenaga kerja dan pemeliharaan operasional kantor hingga pabrik.
+                    <br>
+                    <br>
+                    Kami hadir sebagai mitra strategis untuk membantu instansipemerintah, BUMN, perkantoran swasta, pusat perbelanjaan,kawasan industri, dan fasilitas komersial lainnya dalam menciptakan lingkungan kerja yang aman, tertib, bersih, dan higienis. Dengan mengedepankan sistem rekrutmen berstandar tinggi, pelatihan berkala (continuous training), dan kepatuhan penuh terhadap regulasi ketenagakerjaan, kami memastikan setiap mitra kami dapat fokus sepenuhnya pada bisnis inti (core business) mereka.
+                    </p>
+                </div>
+
+                <!-- Vision & Mission -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm rounded-4 h-100 p-4 bg-white">
+                            <div class="feature-icon bg-primary bg-opacity-15 text-primary mb-3">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Visi Perusahaan</h3>
+                            <p class="text-muted mb-0">Menjadi perusahaan alih daya terdepan, tepercaya, dan berintegritas tinggi di Indonesia yang memberikan solusi operasional fasilitas
+serta pengamanan berstandar industri modern.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm rounded-4 h-100 p-4 bg-white">
+                            <div class="feature-icon bg-success bg-opacity-15 text-success mb-3">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Misi Perusahaan</h3>
+                            <ul class="text-muted ps-3 mb-0">
+                                <li class="mb-2">Kualitas Pelayanan: Menghadirkan tenaga kerja terlatih, disiplin, berdedikasi, dan menjunjung tinggi kode etik profesional.</li>
+                                <li class="mb-2">Kemitraan Jangka Panjang: Membangun kolaborasi transparan dan responsif terhadap setiap kebutuhan spesifik operasional klien.</li>
+                                <li class="mb-2">Kepatuhan & Legalitas: Menjamin pemenuhan hak-hak ketenagakerjaan secara adil dan patuh pada seluruh regulasi hukum yang berlaku.</li>
+                                <li class="mb-2">Inovasi & Pengawasan Berkelanjutan: Menerapkan sistem kontrol mutu (Quality Control) dan pemanfaatan teknologi supervisi berbasis digital.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Values -->
+                <div class="mb-5">
+                    <h3 class="text-center fw-bold mb-4">NILAI INTI PERUSAHAAN (CORE VALUES)</h3>
+                    <div class="row g-3">
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="card card-hover border-0 shadow-sm rounded-4 text-center p-4 bg-white h-100">
+                                <div class="text-primary mb-3 display-6"><i class="fa-solid fa-lightbulb"></i></div>
+                                <h5 class="fw-bold">S – Sinergi (Synergy)</h5>
+                                <p class="text-muted small mb-0">Mengutamakan kolaborasi aktif dan harmonis bersama mitra bisnis.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="card card-hover border-0 shadow-sm rounded-4 text-center p-4 bg-white h-100">
+                                <div class="text-success mb-3 display-6"><i class="fa-solid fa-handshake"></i></div>
+                                <h5 class="fw-bold">A – Akuntabel (Accountable)</h5>
+                                <p class="text-muted small mb-0">Bertanggung jawab penuh terhadap pelaksanaan tugas dan standar kerja.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="card card-hover border-0 shadow-sm rounded-4 text-center p-4 bg-white h-100">
+                                <div class="text-warning mb-3 display-6"><i class="fa-solid fa-users-gear"></i></div>
+                                <h5 class="fw-bold">H – Handal (Reliable)</h5>
+                                <p class="text-muted small mb-0">Tanggap menghadapi situasi rutin maupun darurat dengan kesiapan tinggi.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="card card-hover border-0 shadow-sm rounded-4 text-center p-4 bg-white h-100">
+                                <div class="text-danger mb-3 display-6"><i class="fa-solid fa-award"></i></div>
+                                <h5 class="fw-bold">A – Amanah (Integrity)</h5>
+                                <p class="text-muted small mb-0">Menjaga kejujuran dan etika kerja sebagai fondasi utama kepercayaan.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="card card-hover border-0 shadow-sm rounded-4 text-center p-4 bg-white h-100">
+                                <div class="text-warning mb-3 display-6"><i class="fa-solid fa-users-gear"></i></div>
+                                <h5 class="fw-bold">J – Jeli (Detail-Oriented)</h5>
+                                <p class="text-muted small mb-0">Mengawasi detail kebersihan dan protokol keamanan tanpa kompromi.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="card card-hover border-0 shadow-sm rounded-4 text-center p-4 bg-white h-100">
+                                <div class="text-danger mb-3 display-6"><i class="fa-solid fa-award"></i></div>
+                                <h5 class="fw-bold">A – Adaptif (Adaptive)</h5>
+                                <p class="text-muted small mb-0">Fleksibel menyesuaikan SOP dengan karakteristik dan kebutuhan fasilitas klien.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Short History Timeline -->
+                <div class="bg-white rounded-4 shadow-sm p-5">
+                    <h3 class="fw-bold mb-4 text-center">Sejarah Singkat Perusahaan</h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <span class="badge bg-secondary mb-2">2016 - Pendirian</span>
+                            <h5 class="fw-bold">Awal Mula</h5>
+                            <p class="text-muted small">Didirikan oleh sekelompok insinyur IT di Jakarta sebagai konsultan pengembang perangkat lunak skala kecil.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="badge bg-primary mb-2">2020 - Ekspansi Enterprise</span>
+                            <h5 class="fw-bold">Pertumbuhan Pesat</h5>
+                            <p class="text-muted small">Memperluas portofolio layanan ke ranah Cloud Computing dan sistem ERP terintegrasi untuk perbankan & manufaktur.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="badge bg-success mb-2">2026 - Regional Leader</span>
+                            <h5 class="fw-bold">Transformasi Modern</h5>
+                            <p class="text-muted small">Menjadi pemimpin pasar nasional dengan cabang operasional di 3 kota besar dan klien multinasional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="view-operational" class="view-section py-5">
+            <div class="container py-4">
+                <div class="text-center max-w-700 mx-auto mb-5">
+                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-pill fw-semibold mb-2">Operasional</span>
+                    <h2 class="fw-bold display-6">Cakupan, Fasilitas, & Alur Kerja</h2>
+                    <p class="text-muted">Bagaimana kami mengelola operasional harian untuk menjamin ketepatan waktu dan kualitas layanan.</p>
+                </div>
+
+                <!-- Operational Coverage & Hours -->
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
+                            <h4 class="fw-bold mb-3"><i class="fa-solid fa-map-location-dot text-primary me-2"></i> Wilayah Operasional</h4>
+                            <p class="text-muted">Kantor pusat dan pusat data utama kami berlokasi strategis di kawasan bisnis Jakarta, didukung cabang regional:</p>
+                            <ul class="list-group list-group-flush mb-0">
+                                <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
+                                    <span><i class="fa-solid fa-building me-2 text-muted"></i> Kantor Pusat Jakarta Selatan</span>
+                                    <span class="badge bg-primary rounded-pill">HQ & Data Center</span>
+                                </li>
+                                <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
+                                    <span><i class="fa-solid fa-building me-2 text-muted"></i> Kantor Cabang Surabaya</span>
+                                    <span class="badge bg-secondary rounded-pill">Regional East Java</span>
+                                </li>
+                                <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
+                                    <span><i class="fa-solid fa-building me-2 text-muted"></i> Kantor Cabang Medan</span>
+                                    <span class="badge bg-secondary rounded-pill">Regional Sumatera</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
+                            <h4 class="fw-bold mb-3"><i class="fa-solid fa-clock text-primary me-2"></i> Jam Kerja & Layanan Dukungan</h4>
+                            <p class="text-muted">Kami siap sedia memberikan pelayanan operasional dan teknis terbaik sepanjang minggu:</p>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between py-2 border-bottom">
+                                    <span class="fw-medium">Senin - Jumat:</span>
+                                    <span class="text-muted">08.30 - 17.00 WIB (Kantor)</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-2 border-bottom">
+                                    <span class="fw-medium">Sabtu:</span>
+                                    <span class="text-muted">09.00 - 14.00 WIB (Support Piket)</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-2">
+                                    <span class="fw-medium">Layanan Darurat IT:</span>
+                                    <span class="text-danger fw-semibold">24 / 7 / 365 (SLA Enterprise)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facilities -->
+                <div class="mb-5">
+                    <h3 class="fw-bold mb-4 text-center">Fasilitas Penunjang Utama</h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                                <img src="https://placehold.co/400x250/334155/ffffff?text=Tier-3+Data+Center" class="card-img-top" alt="Data Center">
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold">Tier-3 Data Center</h5>
+                                    <p class="text-muted small mb-0">Infrastruktur server mandiri dengan redundansi daya dan proteksi fisik maksimal.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                                <img src="https://placehold.co/400x250/475569/ffffff?text=R%26D+Software+Lab" class="card-img-top" alt="Lab">
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold">R&D Software Lab</h5>
+                                    <p class="text-muted small mb-0">Ruang riset pengembangan algoritma kecerdasan buatan, keamanan siber, dan QA otomatis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                                <img src="https://placehold.co/400x250/64748b/ffffff?text=Modern+Workspace" class="card-img-top" alt="Workspace">
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold">Collaborative Workspace</h5>
+                                    <p class="text-muted small mb-0">Kantor modern yang didesain untuk kenyamanan tim teknis dalam berkolaborasi bersama klien.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Workflow -->
+                <div class="bg-white rounded-4 shadow-sm p-5">
+                    <h3 class="fw-bold mb-4 text-center">Alur Kerja & Proses Bisnis Klien</h3>
+                    <div class="row g-4 text-center">
+                        <div class="col-md-3">
+                            <div class="p-3">
+                                <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; font-weight: bold;">1</div>
+                                <h5 class="fw-bold h6">Konsultasi Kebutuhan</h5>
+                                <p class="text-muted small mb-0">Analisis mendalam bersama klien untuk memetakan masalah & tujuan bisnis.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3">
+                                <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; font-weight: bold;">2</div>
+                                <h5 class="fw-bold h6">Perancangan Solusi</h5>
+                                <p class="text-muted small mb-0">Penyusunan arsitektur sistem, desain UI/UX, dan estimasi waktu pengerjaan.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3">
+                                <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; font-weight: bold;">3</div>
+                                <h5 class="fw-bold h6">Implementasi & Testing</h5>
+                                <p class="text-muted small mb-0">Eksekusi pengembangan kode, integrasi sistem, dan uji coba ketat (QA).</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="p-3">
+                                <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; font-weight: bold;">4</div>
+                                <h5 class="fw-bold h6">Maintenance & Review</h5>
+                                <p class="text-muted small mb-0">Peluncuran sistem (Go-Live), pelatihan pengguna, serta pemeliharaan berkala.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="view-product" class="view-section py-5">
+            <div class="container py-4">
+                <div class="text-center max-w-700 mx-auto mb-5">
+                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-pill fw-semibold mb-2">Katalog Produk & Layanan</span>
+                    <h2 class="fw-bold display-6">Solusi Teknologi Unggulan Kami</h2>
+                    <p class="text-muted">Pilih produk dan layanan enterprise yang dirancang khusus untuk meningkatkan produktivitas perusahaan.</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Product 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-hover border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
+                            <img src="https://placehold.co/600x350/0f172a/ffffff?text=Enterprise+ERP" class="card-img-top" alt="ERP">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="mb-2"><span class="badge bg-primary bg-opacity-15 text-primary">Software</span></div>
+                                <h4 class="fw-bold h5">Global ERP System</h4>
+                                <p class="text-muted small flex-grow-1">Sistem perencanaan sumber daya perusahaan terintegrasi untuk keuangan, inventaris, dan HRD.</p>
+                                <button class="btn btn-outline-primary rounded-pill mt-3 w-100" onclick="showProductDetail('Global ERP System', 'Sistem ERP canggih berbasis cloud yang memfasilitasi integrasi menyeluruh antar departemen di perusahaan Anda. Memiliki modul keuangan lengkap, manajemen stok real-time, dan laporan analitik otomatis.', 'https://placehold.co/600x350/0f172a/ffffff?text=Enterprise+ERP')">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-hover border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
+                            <img src="https://placehold.co/600x350/1e293b/ffffff?text=Cloud+Infrastructure" class="card-img-top" alt="Cloud">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="mb-2"><span class="badge bg-success bg-opacity-15 text-success">Infrastruktur</span></div>
+                                <h4 class="fw-bold h5">Cloud & Server Solutions</h4>
+                                <p class="text-muted small flex-grow-1">Penyediaan server virtual pribadi (VPS), manajemen migrasi cloud, dan backup otomatis anti-downtime.</p>
+                                <button class="btn btn-outline-primary rounded-pill mt-3 w-100" onclick="showProductDetail('Cloud & Server Solutions', 'Layanan infrastruktur awan yang aman, fleksibel, dan skalabel. Didukung oleh data center tier-3 dengan jaminan ketersediaan sistem 99.9%.', 'https://placehold.co/600x350/1e293b/ffffff?text=Cloud+Infrastructure')">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-hover border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
+                            <img src="https://placehold.co/600x350/334155/ffffff?text=Cyber+Security" class="card-img-top" alt="Cyber Security">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="mb-2"><span class="badge bg-danger bg-opacity-15 text-danger">Keamanan</span></div>
+                                <h4 class="fw-bold h5">Enterprise Cyber Security</h4>
+                                <p class="text-muted small flex-grow-1">Audit keamanan sistem, proteksi firewall berlapis, pencegahan serangan siber, dan pelatihan karyawan.</p>
+                                <button class="btn btn-outline-primary rounded-pill mt-3 w-100" onclick="showProductDetail('Enterprise Cyber Security', 'Solusi pertahanan siber end-to-end untuk melindungi aset data berharga perusahaan dari ancaman ransomware dan kebocoran data.', 'https://placehold.co/600x350/334155/ffffff?text=Cyber+Security')">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-hover border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
+                            <img src="https://placehold.co/600x350/475569/ffffff?text=AI+Analytics" class="card-img-top" alt="AI Analytics">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="mb-2"><span class="badge bg-warning bg-opacity-15 text-warning">Artificial Intelligence</span></div>
+                                <h4 class="fw-bold h5">AI Business Analytics</h4>
+                                <p class="text-muted small flex-grow-1">Pemanfaatan kecerdasan buatan untuk membaca tren pasar, perilaku pelanggan, dan prediksi penjualan.</p>
+                                <button class="btn btn-outline-primary rounded-pill mt-3 w-100" onclick="showProductDetail('AI Business Analytics', 'Platform analitik canggih bertenaga AI yang membantu manajemen puncak mengambil keputusan strategis berdasarkan data prediktif.', 'https://placehold.co/600x350/475569/ffffff?text=AI+Analytics')">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-hover border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
+                            <img src="https://placehold.co/600x350/64748b/ffffff?text=Custom+Software" class="card-img-top" alt="Custom Dev">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="mb-2"><span class="badge bg-primary bg-opacity-15 text-primary">Development</span></div>
+                                <h4 class="fw-bold h5">Custom Software Dev</h4>
+                                <p class="text-muted small flex-grow-1">Pengembangan aplikasi mobile (iOS/Android) dan web kustom sesuai spesifikasi unik kebutuhan bisnis Anda.</p>
+                                <button class="btn btn-outline-primary rounded-pill mt-3 w-100" onclick="showProductDetail('Custom Software Dev', 'Layanan pembuatan aplikasi kustom dari nol dengan standar arsitektur modern, performa tinggi, dan UI/UX intuitif.', 'https://placehold.co/600x350/64748b/ffffff?text=Custom+Software')">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card card-hover border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
+                            <img src="https://placehold.co/600x350/0f172a/ffffff?text=IT+Consulting" class="card-img-top" alt="Consulting">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="mb-2"><span class="badge bg-info bg-opacity-15 text-info">Konsultasi</span></div>
+                                <h4 class="fw-bold h5">IT Strategic Consulting</h4>
+                                <p class="text-muted small flex-grow-1">Pendampingan ahli untuk merumuskan roadmap teknologi jangka panjang dan optimalisasi anggaran IT.</p>
+                                <button class="btn btn-outline-primary rounded-pill mt-3 w-100" onclick="showProductDetail('IT Strategic Consulting', 'Konsultasi bersama para ahli teknologi berpengalaman untuk merancang cetak biru transformasi digital perusahaan.', 'https://placehold.co/600x350/0f172a/ffffff?text=IT+Consulting')">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="view-contact" class="view-section py-5">
+            <div class="container py-4">
+                <div class="text-center max-w-700 mx-auto mb-5">
+                    <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-pill fw-semibold mb-2">Hubungi Kami</span>
+                    <h2 class="fw-bold display-6">Mari Berkolaborasi Bersama Kami</h2>
+                    <p class="text-muted">Punya pertanyaan atau ingin memulai proyek digital? Kirimkan pesan kepada tim ahli kami.</p>
+                </div>
+
+                <div class="row g-5">
+                    <!-- Contact Form -->
+                    <div class="col-lg-7">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+                            <h3 class="fw-bold mb-4">Kirim Pesan atau Pertanyaan</h3>
+                            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                                <div class="mb-3">
+                                    <label for="nama" class="form-label fw-medium">Nama Lengkap <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control rounded-pill px-3 py-2" id="nama" placeholder="Masukkan nama lengkap">
+                                    <div class="invalid-feedback">Nama wajib diisi.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-medium">Alamat Email <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control rounded-pill px-3 py-2" id="email" placeholder="nama@perusahaan.com">
+                                    <div class="invalid-feedback">Email valid wajib diisi.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subjek" class="form-label fw-medium">Subjek / Keperluan <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control rounded-pill px-3 py-2" id="subjek" placeholder="Contoh: Konsultasi ERP System">
+                                    <div class="invalid-feedback">Subjek wajib diisi.</div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="pesan" class="form-label fw-medium">Pesan / Detail Proyek <span class="text-danger">*</span></label>
+                                    <textarea class="form-control rounded-4 px-3 py-2" id="pesan" rows="4" placeholder="Ceritakan kebutuhan atau pertanyaan Anda..."></textarea>
+                                    <div class="invalid-feedback">Pesan minimal 10 karakter.</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100 py-3 shadow-sm">Kirim Pesan Sekarang</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info & Map Placeholder -->
+                    <div class="col-lg-5">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 bg-white mb-4">
+                            <h4 class="fw-bold mb-3">Informasi Kontak</h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex mb-3 align-items-start">
+                                    <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3 me-3 d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Kantor Pusat</h6>
+                                        <p class="text-muted small mb-0">Jl. Jend. Sudirman Kav. 52-53, SCBD, Jakarta Selatan 12190</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex mb-3 align-items-start">
+                                    <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3 me-3 d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Telepon / WhatsApp</h6>
+                                        <p class="text-muted small mb-0">+62 21 5558 9012 / +62 812 3456 7890</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-start">
+                                    <div class="bg-primary bg-opacity-10 text-primary rounded-circle p-3 me-3 d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Email Resmi</h6>
+                                        <p class="text-muted small mb-0">info@globalsolusi.co.id</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Map Placeholder -->
+                        <div class="card border-0 shadow-sm rounded-4 overflow-hidden bg-white">
+                            <div class="bg-dark text-white p-3 text-center small fw-medium">
+                                <i class="fa-solid fa-map me-2"></i> Peta Lokasi Kantor Pusat
+                            </div>
+                            <div style="height: 200px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #64748b;">
+                                <div class="text-center p-3">
+                                    <i class="fa-solid fa-map-location-dot display-4 mb-2"></i>
+                                    <p class="mb-0 small fw-semibold">SCBD, DKI Jakarta, Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-5 mt-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-white-50 d-flex align-items-center mb-3" href="#">
+                        <div class="bg-primary text-white rounded p-2 me-2 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                            <i class="fa-solid fa-cube fa-xs"></i>
+                        </div>
+                        <span class="fs-5">PT. SAHAJA INTI NIAGA</span>
+                    </a>
+                    <p class="small text-whitemb-3">Mitra terpercaya transformasi digital korporat dengan standar keamanan global dan dedikasi profesional tinggi.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-5"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <h6 class="text-white-50 fw-bold mb-3">Navigasi</h6>
+                    <ul class="list-unstyled small mb-0 d-flex flex-column gap-2">
+                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('profile')">Profile</a></li>
+                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('about')">About Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('about')">Why Choose Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('operational')">Operational</a></li>
+                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('product')">Product</a></li>
+                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('contact')">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h6 class="text-white fw-bold mb-3">Layanan Utama</h6>
+                    <ul class="list-unstyled small mb-0 d-flex flex-column gap-2 text-white">
+                        <li>Enterprise ERP System</li>
+                        <li>Cloud & Server Solutions</li>
+                        <li>Cyber Security Audit</li>
+                        <li>AI Business Analytics</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="text-white fw-bold mb-3">Buletin & Info</h6>
+                    <p class="small text-white mb-3">Dapatkan update teknologi terbaru langsung ke email Anda.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control form-control-sm rounded-start-pill px-3" placeholder="Email Anda...">
+                        <button class="btn btn-primary btn-sm rounded-end-pill px-3" type="button" onclick="showCustomAlert('Terima kasih telah berlangganan buletin kami!')">Join</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary opacity-25 my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start small text-white">
+                    &copy; 2026 PT. SAHAJA INTI NIAGA. Hak Cipta Dilindungi.
+                </div>
+                <div class="col-md-6 text-center text-md-end small text-white mt-2 mt-md-0">
+                    <a href="#" class="text-white text-decoration-none me-3">Kebijakan Privasi</a>
+                    <a href="#" class="text-white text-decoration-none">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-4 border-0 shadow-lg">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold" id="productModalTitle">Detail Produk</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                            <img id="productModalImg" src="" alt="Product Image" class="img-fluid rounded-3 shadow-sm w-100 object-fit-cover" style="height: 240px;">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 id="productModalHeading" class="fw-bold mb-3"></h4>
+                            <p id="productModalDesc" class="text-white mb-4"></p>
+                            <button class="btn btn-primary rounded-pill px-4 w-100" data-bs-dismiss="modal" onclick="switchView('contact')">Pesan / Konsultasikan Layanan Ini</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
