@@ -25,7 +25,6 @@
 </head>
 <link rel="icon" type="image/png" href="img/logo-pavicon-removebg-preview.png">
 <body>
-
     <div id="customAlert" class="custom-alert-box alert alert-success alert-dismissible fade show border-0 py-3" role="alert">
         <div class="d-flex align-items-center">
             <i class="fa-solid fa-circle-check fs-4 me-3 text-success"></i>
@@ -74,6 +73,7 @@
     </nav>
 
     <main>
+        <!-- Section Profile -->
         <section id="view-profile" class="view-section active">
             <!-- Hero Cover Banner -->
             <!-- nav>
@@ -158,32 +158,62 @@
             </div>
 
             <!-- CEO Welcome Message -->
-            <div class="container py-5 my-4">
-                <div class="row align-items-center g-5">
-                    <div class="col-lg-6">
-                        <div class="position-relative">
-                            <img src="https://placehold.co/600x400/cbd5e1/475569?text=CEO+&+Management" alt="CEO" class="img-fluid rounded-4 shadow-sm">
-                            <div class="position-absolute bottom-0 start-0 m-3 bg-white p-3 rounded-3 shadow border">
-                                <p class="mb-0 fw-bold small">"Inovasi teknologi adalah penggerak utama efisiensi korporat modern."</p>
-                                <small class="text-muted">— Anggi Faudzan, CEO</small>
+            <div class="container py-5 my-4 pt-0 pb-4">
+                <div class="row align-items-center g-5 pt-3 pb-4">                    
+                    <!-- Bagian Komitmen Layanan & Jaminan Kualitas -->
+                    <div class="row align-items-center g-5 py-4 pt-0">
+                        <!-- Kolom Teks di Kiri -->
+                        <div class="col-lg-6">
+                            <h2 class="fw-bold display-6 mb-4 text-dark">Komitmen Mutu dan Jaminan Kualitas Terbaik</h2>
+                            <p class="text-muted mb-4">Kami percaya bahwa kepuasan klien dibangun di atas konsistensi kualitas, ketepatan waktu pengerjaan, serta transparansi operasional di setiap proyek.</p>
+
+                            <ul class="list-unstyled d-flex flex-column gap-3 mb-4">
+                                <li class="d-flex align-items-center text-secondary">
+                                    <i class="fa-solid fa-circle-check text-primary me-2 fs-5"></i> Standar operasional prosedur (SOP) yang                     ketat
+                                </li>
+                                <li class="d-flex align-items-center text-secondary">
+                                    <i class="fa-solid fa-circle-check text-primary me-2 fs-5"></i> Evaluasi performa dan audit berkala
+                                </li>
+                                <li class="d-flex align-items-center text-secondary">
+                                    <i class="fa-solid fa-circle-check text-primary me-2 fs-5"></i> Garansi pemeliharaan dan asesmen sistem
+                                </li>
+                            </ul>
+                        
+                            <button class="btn btn-primary rounded-pill px-4 py-2 shadow-sm" onclick="switchView('why-choose-us')">Lihat                    Keunggulan Kami</button>
+                        </div>
+                    
+                        <!-- Kolom Kartu Keunggulan Mutu di Kanan -->
+                        <div class="col-lg-6">
+                            <div class="d-flex flex-column gap-4">
+                                <!-- Kartu 1: Kualitas Eksekusi -->
+                                <div class="p-4 bg-white border-0 shadow-sm rounded-4 position-relative border-start border-4                   border-primary">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <div class="text-primary fs-4"><i class="fa-solid fa-award"></i></div>
+                                        <h5 class="fw-bold mb-0 text-dark">Kualitas Eksekusi Unggul</h5>
+                                    </div>
+                                    <p class="text-muted mb-0 small" style="line-height: 1.7;">
+                                        Setiap pengerjaan proyek ditangani langsung oleh tenaga ahli berpengalaman dengan pengawasan mutu                   yang ketat untuk meminimalisir risiko kesalahan.
+                                    </p>
+                                </div>
+                            
+                                <!-- Kartu 2: Keamanan & Kepercayaan -->
+                                <div class="p-4 bg-white border-0 shadow-sm rounded-4 position-relative border-start border-4                   border-success">
+                                    <div class="d-flex align-items-center gap-3 mb-2">
+                                        <div class="text-success fs-4"><i class="fa-solid fa-shield-halved"></i></div>
+                                        <h5 class="fw-bold mb-0 text-dark">Keamanan & Kerahasiaan</h5>
+                                    </div>
+                                    <p class="text-muted mb-0 small" style="line-height: 1.7;">
+                                        Menjamin perlindungan data perusahaan dan privasi klien dengan sistem keamanan berlapis serta                   kebijakan privasi yang transparan.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <span class="text-primary fw-bold text-uppercase tracking-wider small">Sambutan Pimpinan</span>
-                        <h2 class="fw-bold mb-3 mt-1">Membangun Ekosistem Digital yang Tangguh dan Efisien</h2>
-                        <p class="text-muted">Sejak didirikan pada tahun 2016, PT. SAHAJA INTI NIAGA berkomitmen untuk menjadi mitra strategis dalam setiap fase digitalisasi perusahaan di Indonesia.</p>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2 d-flex align-items-center"><i class="fa-solid fa-check text-primary me-2"></i> Solusi disesuaikan dengan kebutuhan spesifik industri</li>
-                            <li class="mb-2 d-flex align-items-center"><i class="fa-solid fa-check text-primary me-2"></i> Dukungan teknis purna jual 24/7</li>
-                            <li class="mb-2 d-flex align-items-center"><i class="fa-solid fa-check text-primary me-2"></i> Tim engineer bersertifikasi internasional</li>
-                        </ul>
-                        <button class="btn btn-outline-dark rounded-pill px-4" onclick="switchView('about')">Pelajari Tentang Kami</button>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Section About -->
         <section id="view-about" class="view-section pt-4 pb-5">
             <div class="container pt-4 pb-4">
                 <div class="text-center max-w-700 mx-auto mb-5 gap-lg-2 mt-3 mt-lg-0">
@@ -288,24 +318,24 @@ serta pengamanan berstandar industri modern.</p>
                     </div>
                 </div>
 
-                <!-- Short History Timeline -->
+                <!-- Short History Timeline -->                 
                 <div class="bg-white rounded-4 shadow-sm p-5">
                     <h3 class="fw-bold mb-4 text-center">Sejarah Singkat Perusahaan</h3>
                     <div class="row g-4">
                         <div class="col-md-4">
-                            <span class="badge bg-secondary mb-2">2016 - Pendirian</span>
+                            <span class="badge bg-secondary mb-2">Q1 2026 - Pendirian</span>
                             <h5 class="fw-bold">Awal Mula</h5>
-                            <p class="text-muted small">Didirikan oleh sekelompok insinyur IT di Jakarta sebagai konsultan pengembang perangkat lunak skala kecil.</p>
+                            <p class="text-muted small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque nemo cum necessitatibus doloribus voluptatibus? </p>
                         </div>
                         <div class="col-md-4">
-                            <span class="badge bg-primary mb-2">2020 - Ekspansi Enterprise</span>
+                            <span class="badge bg-primary mb-2">Q2 2026 - Ekspansi Enterprise</span>
                             <h5 class="fw-bold">Pertumbuhan Pesat</h5>
-                            <p class="text-muted small">Memperluas portofolio layanan ke ranah Cloud Computing dan sistem ERP terintegrasi untuk perbankan & manufaktur.</p>
+                            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima fugit magnam eum harum in id! </p>
                         </div>
                         <div class="col-md-4">
-                            <span class="badge bg-success mb-2">2026 - Regional Leader</span>
+                            <span class="badge bg-success mb-2">Q3 2026 - Regional Leader</span>
                             <h5 class="fw-bold">Transformasi Modern</h5>
-                            <p class="text-muted small">Menjadi pemimpin pasar nasional dengan cabang operasional di 3 kota besar dan klien multinasional.</p>
+                            <p class="text-muted small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga cupiditate repellendus, aspernatur nobis at reprehenderit. </p>
                         </div>
                     </div>
                 </div>
@@ -381,6 +411,7 @@ berhalangan hadir..</p>
             </div>
         </section>
 
+        <!-- Section Operational -->
         <section id="view-operational" class="view-section pt-4 pb-5">
             <div class="container pt-4 pb-4">
                 <div class="text-center max-w-700 mx-auto mb-5 mt-0">                    
@@ -393,12 +424,12 @@ berhalangan hadir..</p>
                     <div class="col-lg-6">
                         <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
                             <h4 class="fw-bold mb-3"><i class="fa-solid fa-map-location-dot text-primary me-2"></i> Wilayah Operasional</h4>
-                            <p class="text-muted">Kantor pusat dan pusat data utama kami berlokasi strategis di kawasan bisnis Jakarta, didukung cabang regional:</p>
+                            <p class="text-muted">Kantor pusat dan pusat data utama kami berlokasi strategis di kawasan Depok</p>
                             <ul class="list-group list-group-flush mb-0">
                                 <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
                                     <span><i class="text-muted"></i> <img src="img/1.jpg" class="img-fluid" style="object-fit: contain; width: 100%; height: 100%;"></span>
                                 </li>
-                                <li class="list-group-item px-0 d-flex justify-content-between align-items-center">
+                            <!--<li class="list-group-item px-0 d-flex justify-content-between align-items-center">
                                     <span><i class="fa-solid fa-building me-2 text-muted"></i> Kantor Cabang Surabaya</span>
                                     <span class="badge bg-secondary rounded-pill">Regional East Java</span>
                                 </li>
@@ -407,6 +438,7 @@ berhalangan hadir..</p>
                                     <span class="badge bg-secondary rounded-pill">Regional Sumatera</span>
                                 </li>
                             </ul>
+                        -->
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -421,11 +453,7 @@ berhalangan hadir..</p>
                                 <div class="d-flex justify-content-between py-2 border-bottom">
                                     <span class="fw-medium">Sabtu:</span>
                                     <span class="text-muted">09.00 - 14.00 WIB (Support Piket)</span>
-                                </div>
-                                <div class="d-flex justify-content-between py-2">
-                                    <span class="fw-medium">Layanan Darurat IT:</span>
-                                    <span class="text-danger fw-semibold">24 / 7 / 365 (SLA Enterprise)</span>
-                                </div>
+                                </div>                                
                             </div>
                         </div>
                     </div>
@@ -439,8 +467,8 @@ berhalangan hadir..</p>
                             <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
                                 <img src="img/1.jpg" class="card-img-top" alt="Data Center">
                                 <div class="card-body p-4">
-                                    <h5 class="fw-bold">Tier-3 Data Center</h5>
-                                    <p class="text-muted small mb-0">Infrastruktur server mandiri dengan redundansi daya dan proteksi fisik maksimal.</p>
+                                    <h5 class="fw-bold">Fasilitas 1</h5>
+                                    <p class="text-muted small mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nostrum, necessitatibus labore illum quo quibusdam molestias earum rerum aliquam ea!.</p>
                                 </div>
                             </div>
                         </div>
@@ -448,8 +476,8 @@ berhalangan hadir..</p>
                             <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
                                 <img src="img/1.jpg" class="card-img-top" alt="Lab">
                                 <div class="card-body p-4">
-                                    <h5 class="fw-bold">R&D Software Lab</h5>
-                                    <p class="text-muted small mb-0">Ruang riset pengembangan algoritma kecerdasan buatan, keamanan siber, dan QA otomatis.</p>
+                                    <h5 class="fw-bold">Fasilitas 2</h5>
+                                    <p class="text-muted small mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nostrum, necessitatibus labore illum quo quibusdam molestias earum rerum aliquam ea!.</p>
                                 </div>
                             </div>
                         </div>
@@ -457,8 +485,8 @@ berhalangan hadir..</p>
                             <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
                                 <img src="img/1.jpg" class="card-img-top" alt="Workspace">
                                 <div class="card-body p-4">
-                                    <h5 class="fw-bold">Collaborative Workspace</h5>
-                                    <p class="text-muted small mb-0">Kantor modern yang didesain untuk kenyamanan tim teknis dalam berkolaborasi bersama klien.</p>
+                                    <h5 class="fw-bold">Fasilitas 3</h5>
+                                    <p class="text-muted small mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nostrum, necessitatibus labore illum quo quibusdam molestias earum rerum aliquam ea!.</p>
                                 </div>
                             </div>
                         </div>
@@ -472,29 +500,29 @@ berhalangan hadir..</p>
                         <div class="col-md-3">
                             <div class="p-3">
                                 <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; font-weight: bold;">1</div>
-                                <h5 class="fw-bold h6">Konsultasi Kebutuhan</h5>
-                                <p class="text-muted small mb-0">Analisis mendalam bersama klien untuk memetakan masalah & tujuan bisnis.</p>
+                                <h5 class="fw-bold h6">Proses 1</h5>
+                                <p class="text-muted small mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit molestiae amet doloremque maiores nostrum sit. </p>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="p-3">
                                 <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; font-weight: bold;">2</div>
-                                <h5 class="fw-bold h6">Perancangan Solusi</h5>
-                                <p class="text-muted small mb-0">Penyusunan arsitektur sistem, desain UI/UX, dan estimasi waktu pengerjaan.</p>
+                                <h5 class="fw-bold h6">Proses 2</h5>
+                                <p class="text-muted small mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nisi necessitatibus minima est, aut odit. </p>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="p-3">
                                 <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; font-weight: bold;">3</div>
-                                <h5 class="fw-bold h6">Implementasi & Testing</h5>
-                                <p class="text-muted small mb-0">Eksekusi pengembangan kode, integrasi sistem, dan uji coba ketat (QA).</p>
+                                <h5 class="fw-bold h6">Proses 3</h5>
+                                <p class="text-muted small mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, odio ea natus eveniet sint nobis. </p>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="p-3">
                                 <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px; font-weight: bold;">4</div>
-                                <h5 class="fw-bold h6">Maintenance & Review</h5>
-                                <p class="text-muted small mb-0">Peluncuran sistem (Go-Live), pelatihan pengguna, serta pemeliharaan berkala.</p>
+                                <h5 class="fw-bold h6">Proses 4</h5>
+                                <p class="text-muted small mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dignissimos suscipit recusandae aliquid eos cupiditate!</p>
                             </div>
                         </div>
                     </div>
@@ -502,23 +530,24 @@ berhalangan hadir..</p>
             </div>
         </section>
 
+        <!-- Section Product -->
         <section id="view-product" class="view-section pt-4 pb-5">
             <div class="container pt-4 pb-4">
                 <div class="text-center max-w-700 mx-auto mb-5">
                     <h2 class="fw-bold display-6">Solusi Teknologi Unggulan Kami</h2>
-                    <p class="text-muted">Pilih produk dan layanan enterprise yang dirancang khusus untuk meningkatkan produktivitas perusahaan.</p>
+                    <p class="text-muted">Pilih produk dan layanan yang dirancang khusus untuk meningkatkan produktivitas perusahaan.</p>
                 </div>
 
                 <div class="row g-4">
                     <!-- Product 1 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="card card-hover border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
-                            <img src="https://placehold.co/600x350/0f172a/ffffff?text=Enterprise+ERP" class="card-img-top" alt="ERP">
+                            <img src="https://placehold.co/600x350/0f172a/ffffff?text=Product+1" class="card-img-top" alt="ERP">
                             <div class="card-body p-4 d-flex flex-column">
-                                <div class="mb-2"><span class="badge bg-primary bg-opacity-15 text-primary">Software</span></div>
-                                <h4 class="fw-bold h5">Global ERP System</h4>
-                                <p class="text-muted small flex-grow-1">Sistem perencanaan sumber daya perusahaan terintegrasi untuk keuangan, inventaris, dan HRD.</p>
-                                <button class="btn btn-outline-primary rounded-pill mt-3 w-100" onclick="showProductDetail('Global ERP System', 'Sistem ERP canggih berbasis cloud yang memfasilitasi integrasi menyeluruh antar departemen di perusahaan Anda. Memiliki modul keuangan lengkap, manajemen stok real-time, dan laporan analitik otomatis.', 'https://placehold.co/600x350/0f172a/ffffff?text=Enterprise+ERP')">Lihat Detail</button>
+                                <div class="mb-2"><span class="badge bg-primary bg-opacity-15 text-dark">Software</span></div>
+                                <h4 class="fw-bold h5">Product 1</h4>
+                                <p class="text-muted small flex-grow-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum fugit quam ducimus obcaecati perspiciatis sint optio corporis vel provident?.</p>
+                                <button class="btn btn-outline-primary rounded-pill mt-3 w-100" onclick="showProductDetail('Product 1', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum fugit quam ducimus obcaecati perspiciatis sint optio corporis vel provident?.', 'https://placehold.co/600x350/0f172a/ffffff?text=Product+1')">Lihat Detail</button>
                             </div>
                         </div>
                     </div>
@@ -526,11 +555,11 @@ berhalangan hadir..</p>
                     <!-- Product 2 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="card card-hover border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
-                            <img src="https://placehold.co/600x350/1e293b/ffffff?text=Cloud+Infrastructure" class="card-img-top" alt="Cloud">
+                            <img src="https://placehold.co/600x350/1e293b/ffffff?text=Product+2" class="card-img-top" alt="Cloud">
                             <div class="card-body p-4 d-flex flex-column">
                                 <div class="mb-2"><span class="badge bg-success bg-opacity-15 text-success">Infrastruktur</span></div>
-                                <h4 class="fw-bold h5">Cloud & Server Solutions</h4>
-                                <p class="text-muted small flex-grow-1">Penyediaan server virtual pribadi (VPS), manajemen migrasi cloud, dan backup otomatis anti-downtime.</p>
+                                <h4 class="fw-bold h5">Product 2</h4>
+                                <p class="text-muted small flex-grow-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nostrum, necessitatibus labore illum quo quibusdam molestias earum rerum aliquam ea!.</p>
                                 <button class="btn btn-outline-primary rounded-pill mt-3 w-100" onclick="showProductDetail('Cloud & Server Solutions', 'Layanan infrastruktur awan yang aman, fleksibel, dan skalabel. Didukung oleh data center tier-3 dengan jaminan ketersediaan sistem 99.9%.', 'https://placehold.co/600x350/1e293b/ffffff?text=Cloud+Infrastructure')">Lihat Detail</button>
                             </div>
                         </div>
@@ -539,11 +568,11 @@ berhalangan hadir..</p>
                     <!-- Product 3 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="card card-hover border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
-                            <img src="https://placehold.co/600x350/334155/ffffff?text=Cyber+Security" class="card-img-top" alt="Cyber Security">
+                            <img src="https://placehold.co/600x350/334155/ffffff?text=Product+3" class="card-img-top" alt="Cyber Security">
                             <div class="card-body p-4 d-flex flex-column">
                                 <div class="mb-2"><span class="badge bg-danger bg-opacity-15 text-danger">Keamanan</span></div>
-                                <h4 class="fw-bold h5">Enterprise Cyber Security</h4>
-                                <p class="text-muted small flex-grow-1">Audit keamanan sistem, proteksi firewall berlapis, pencegahan serangan siber, dan pelatihan karyawan.</p>
+                                <h4 class="fw-bold h5">Product 3</h4>
+                                <p class="text-muted small flex-grow-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nostrum, necessitatibus labore illum quo quibusdam molestias earum rerum aliquam ea!.</p>
                                 <button class="btn btn-outline-primary rounded-pill mt-3 w-100" onclick="showProductDetail('Enterprise Cyber Security', 'Solusi pertahanan siber end-to-end untuk melindungi aset data berharga perusahaan dari ancaman ransomware dan kebocoran data.', 'https://placehold.co/600x350/334155/ffffff?text=Cyber+Security')">Lihat Detail</button>
                             </div>
                         </div>
@@ -552,11 +581,11 @@ berhalangan hadir..</p>
                     <!-- Product 4 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="card card-hover border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
-                            <img src="https://placehold.co/600x350/475569/ffffff?text=AI+Analytics" class="card-img-top" alt="AI Analytics">
+                            <img src="https://placehold.co/600x350/475569/ffffff?text=Product+4" class="card-img-top" alt="AI Analytics">
                             <div class="card-body p-4 d-flex flex-column">
                                 <div class="mb-2"><span class="badge bg-warning bg-opacity-15 text-warning">Artificial Intelligence</span></div>
-                                <h4 class="fw-bold h5">AI Business Analytics</h4>
-                                <p class="text-muted small flex-grow-1">Pemanfaatan kecerdasan buatan untuk membaca tren pasar, perilaku pelanggan, dan prediksi penjualan.</p>
+                                <h4 class="fw-bold h5">Product 4</h4>
+                                <p class="text-muted small flex-grow-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nostrum, necessitatibus labore illum quo quibusdam molestias earum rerum aliquam ea!.</p>
                                 <button class="btn btn-outline-primary rounded-pill mt-3 w-100" onclick="showProductDetail('AI Business Analytics', 'Platform analitik canggih bertenaga AI yang membantu manajemen puncak mengambil keputusan strategis berdasarkan data prediktif.', 'https://placehold.co/600x350/475569/ffffff?text=AI+Analytics')">Lihat Detail</button>
                             </div>
                         </div>
@@ -565,11 +594,11 @@ berhalangan hadir..</p>
                     <!-- Product 5 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="card card-hover border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
-                            <img src="https://placehold.co/600x350/64748b/ffffff?text=Custom+Software" class="card-img-top" alt="Custom Dev">
+                            <img src="https://placehold.co/600x350/64748b/ffffff?text=Product+5" class="card-img-top" alt="Custom Dev">
                             <div class="card-body p-4 d-flex flex-column">
                                 <div class="mb-2"><span class="badge bg-primary bg-opacity-15 text-primary">Development</span></div>
-                                <h4 class="fw-bold h5">Custom Software Dev</h4>
-                                <p class="text-muted small flex-grow-1">Pengembangan aplikasi mobile (iOS/Android) dan web kustom sesuai spesifikasi unik kebutuhan bisnis Anda.</p>
+                                <h4 class="fw-bold h5">Product 5</h4>
+                                <p class="text-muted small flex-grow-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nostrum, necessitatibus labore illum quo quibusdam molestias earum rerum aliquam ea!..</p>
                                 <button class="btn btn-outline-primary rounded-pill mt-3 w-100" onclick="showProductDetail('Custom Software Dev', 'Layanan pembuatan aplikasi kustom dari nol dengan standar arsitektur modern, performa tinggi, dan UI/UX intuitif.', 'https://placehold.co/600x350/64748b/ffffff?text=Custom+Software')">Lihat Detail</button>
                             </div>
                         </div>
@@ -578,11 +607,11 @@ berhalangan hadir..</p>
                     <!-- Product 6 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="card card-hover border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white">
-                            <img src="https://placehold.co/600x350/0f172a/ffffff?text=IT+Consulting" class="card-img-top" alt="Consulting">
+                            <img src="https://placehold.co/600x350/0f172a/ffffff?text=Product+6" class="card-img-top" alt="Consulting">
                             <div class="card-body p-4 d-flex flex-column">
                                 <div class="mb-2"><span class="badge bg-info bg-opacity-15 text-info">Konsultasi</span></div>
-                                <h4 class="fw-bold h5">IT Strategic Consulting</h4>
-                                <p class="text-muted small flex-grow-1">Pendampingan ahli untuk merumuskan roadmap teknologi jangka panjang dan optimalisasi anggaran IT.</p>
+                                <h4 class="fw-bold h5">Product 6</h4>
+                                <p class="text-muted small flex-grow-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita nostrum, necessitatibus labore illum quo quibusdam molestias earum rerum aliquam ea!.</p>
                                 <button class="btn btn-outline-primary rounded-pill mt-3 w-100" onclick="showProductDetail('IT Strategic Consulting', 'Konsultasi bersama para ahli teknologi berpengalaman untuk merancang cetak biru transformasi digital perusahaan.', 'https://placehold.co/600x350/0f172a/ffffff?text=IT+Consulting')">Lihat Detail</button>
                             </div>
                         </div>
@@ -591,11 +620,12 @@ berhalangan hadir..</p>
             </div>
         </section>
 
+        <!-- Section Contact -->
         <section id="view-contact" class="view-section pt-4 pb-5">
             <div class="container pt-4 pb-4">
                 <div class="text-center max-w-700 mx-auto mb-5">                    
                     <h2 class="fw-bold display-6">Mari Berkolaborasi Bersama Kami</h2>
-                    <p class="text-muted">Punya pertanyaan atau ingin memulai proyek digital? Kirimkan pesan kepada tim ahli kami.</p>
+                    <p class="text-muted">Punya pertanyaan atau ingin memulai proyek? Kirimkan pesan kepada tim ahli kami.</p>
                 </div>
 
                 <div class="row g-5">
@@ -681,9 +711,80 @@ Depok, Jawa Barat 16455</p>
                 </div>
             </div>
         </section>
+
+        <!-- Section Kebijakan Privasi -->
+        <section id="view-kebijakan-privasi" class="view-section pt-4 pb-5">
+            <div class="container pt-4 pb-4">
+                <div class="text-center mb-4">
+                <h2 class="fw-bold display-5">Kebijakan Privasi</h2>
+                <p class="text-muted col-lg-6 mx-auto">Komitmen PT. SAHAJA INTI NIAGA dalam melindungi kerahasiaan dan keamanan data pribadi Anda.</p>
+            </div>
+
+        <!-- Kartu Konten Kebijakan Privasi -->
+        <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+            <div class="mb-4">
+                <h5 class="fw-bold text-primary mb-2">1. Pendahuluan</h5>
+                <p class="text-muted">PT. SAHAJA INTI NIAGA ("Kami") sangat menghormati privasi Anda. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, mengungkapkan, dan melindungi informasi pribadi Anda saat Anda mengunjungi situs web kami atau menggunakan layanan kami.</p>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="fw-bold text-primary mb-2">2. Informasi yang Kami Kumpulkan</h5>
+                <p class="text-muted">Kami dapat mengumpulkan informasi dari Anda dalam berbagai bentuk, termasuk namun tidak terbatas pada:</p>
+                <ul class="text-muted">
+                    <li><strong>Informasi Kontak:</strong> Nama, alamat email, nomor telepon, dan nama perusahaan saat Anda mengisi formulir kontak atau berlangganan buletin.</li>
+                    <li><strong>Informasi Teknis:</strong> Alamat IP, jenis peramban (browser), waktu akses, dan halaman yang Anda kunjungi melalui cookie otomatis.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="fw-bold text-primary mb-2">3. Penggunaan Informasi</h5>
+                <p class="text-muted">Informasi yang kami kumpulkan digunakan untuk:</p>
+                <ul class="text-muted">
+                    <li>Menanggapi pertanyaan, konsultasi, atau permintaan layanan korporat Anda.</li>
+                    <li>Mengirimkan informasi pembaruan produk, buletin, atau penawaran khusus (jika Anda berlangganan).</li>
+                    <li>Meningkatkan kualitas performa situs web dan keamanan sistem operasional kami.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="fw-bold text-primary mb-2">4. Hubungi Kami</h5>
+                <p class="text-muted mb-0">Jika ada pertanyaan mengenai Kebijakan Privasi ini, Anda dapat menghubungi kami melalui halaman <a href="#" onclick="switchView('contact')" class="text-decoration-none fw-semibold">Hubungi Kami</a>.</p>
+            </div>
+        </section>
+
+        <!-- Section Syarat & Ketentuan -->
+        <section id="view-syarat-ketentuan" class="view-section pt-4 pb-5">
+            <div class="container pt-4 pb-4">
+                <!-- Judul Header -->
+                <div class="text-center mb-4">
+                <h2 class="fw-bold display-5">Syarat & Ketentuan</h2>
+                <p class="text-muted col-lg-6 mx-auto">Aturan dan ketentuan hukum yang berlaku dalam penggunaan situs web   serta layanan PT. SAHAJA INTI NIAGA.</p>
+                </div>
+
+                <!-- Kartu Konten Syarat & Ketentuan -->
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+                <div class="mb-4">
+                    <h5 class="fw-bold text-primary mb-2">1. Ketentuan Umum</h5>
+                    <p class="text-muted">Dengan mengakses dan menggunakan situs web PT. SAHAJA INTI NIAGA, Anda menyatakan     setuju untuk mematuhi dan terikat oleh Syarat & Ketentuan penggunaan ini. Jika Anda tidak setuju dengan     bagian mana pun dari ketentuan ini, mohon untuk tidak menggunakan situs web kami.</p>
+                </div>
+                <div class="mb-4">
+                    <h5 class="fw-bold text-primary mb-2">2. Hak Kekayaan Intelektual</h5>
+                    <p class="text-muted">Seluruh konten yang terdapat di dalam situs web ini, termasuk namun tidak terbatas    pada teks, grafik, logo, ikon, gambar, klip audio, unduhan digital, dan kompilasi data adalah milik PT.    SAHAJA INTI NIAGA dan dilindungi oleh hukum Hak Cipta yang berlaku di Indonesia.</p>
+                </div>
+                <div class="mb-4">
+                    <h5 class="fw-bold text-primary mb-2">3. Batasan Tanggung Jawab</h5>
+                    <p class="text-muted">Informasi dan layanan yang disajikan di situs web ini disediakan "sebagaimana     adanya". PT. SAHAJA INTI NIAGA tidak memberikan garansi atau jaminan atas kelengkapan atau keakuratan   mutlak, dan tidak bertanggung jawab atas kerugian langsung maupun tidak langsung yang timbul dari     penggunaan situs ini.</p>
+                </div>
+                <div>
+                    <h5 class="fw-bold text-primary mb-2">4. Perubahan Ketentuan</h5>
+                    <p class="text-muted mb-0">PT. SAHAJA INTI NIAGA berhak untuk mengubah, memodifikasi, atau memperbarui  Syarat & Ketentuan ini sewaktu-waktu tanpa pemberitahuan sebelumnya. Penggunaan berkelanjutan Anda   terhadap situs ini menandakan penerimaan Anda atas perubahan tersebut.</p>
+                </div>
+            </div>                     
+        </section>
+
     </main>
 
-    <footer class="py-5 mt-5">
+    <footer class="py-5 mt-0">
         <div class="container">
             <div class="row g-4 mb-4">
                 <div class="col-lg-6">
@@ -694,6 +795,10 @@ Depok, Jawa Barat 16455</p>
                         <span class="text-white fs-5">PT. SAHAJA INTI NIAGA</span>
                     </a>
                     <p class="small text-white">Mitra terpercaya transformasi digital korporat dengan standar keamanan global dan dedikasi profesional tinggi.</p>
+                    <!-- Tambahan Info Email -->
+                    <p class="small text-white-50 mb-3 d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-envelope text-primary"></i>adminshj@sahaja-corp.web.id
+                    </p>
                     <div class="d-flex gap-3">
                         <a href="#" class="text-white fs-5"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="#" class="text-white fs-5"><i class="fa-brands fa-instagram"></i></a>
@@ -715,10 +820,19 @@ Depok, Jawa Barat 16455</p>
                 <div class="col-lg-3 col-md-4 col-6">
                     <h6 class="text-white fw-bold mb-3">Product</h6>
                     <ul class="list-unstyled small mb-0 d-flex flex-column gap-2 text-white">
-                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('profile')">Enterprise ERP System</a></li>
-                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('about')">Cloud & Server Solutions</a></li>
-                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('why-choose-us')">Cyber Security Audit</a></li>
-                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('operational')">AI Business Analytics</a></li>
+                        
+                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('product'); showProductDetail('Product 1', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum fugit quam ducimus obcaecati perspiciatis sint optio corporis vel provident?.', 'https://placehold.co/600x350/0f172a/ffffff?text=Product+1')">Product 1</a></li>
+
+                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('product'); showProductDetail('Product 2', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum fugit quam ducimus obcaecati perspiciatis sint optio corporis vel provident?.', 'https://placehold.co/600x350/0f172a/ffffff?text=Product+1')">Product 2</a></li>
+
+                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('product'); showProductDetail('Product 3', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum fugit quam ducimus obcaecati perspiciatis sint optio corporis vel provident?.', 'https://placehold.co/600x350/0f172a/ffffff?text=Product+1')">Product 3</a></li>
+
+                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('product'); showProductDetail('Product 4', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum fugit quam ducimus obcaecati perspiciatis sint optio corporis vel provident?.', 'https://placehold.co/600x350/0f172a/ffffff?text=Product+1')">Product 4</a></li>
+
+                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('product'); showProductDetail('Product 5', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum fugit quam ducimus obcaecati perspiciatis sint optio corporis vel provident?.', 'https://placehold.co/600x350/0f172a/ffffff?text=Product+1')">Product 5</a></li>
+
+                        <li><a href="#" class="text-white text-decoration-none" onclick="switchView('product'); showProductDetail('Product 6', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum fugit quam ducimus obcaecati perspiciatis sint optio corporis vel provident?.', 'https://placehold.co/600x350/0f172a/ffffff?text=Product+1')">Product 6</a></li>
+
                     </ul>
                 </div>
                 <!-- <div class="col-lg-3 col-md-4">
@@ -736,13 +850,14 @@ Depok, Jawa Barat 16455</p>
                     &copy; 2026 PT. SAHAJA INTI NIAGA. Hak Cipta Dilindungi.
                 </div>
                 <div class="col-md-6 text-center text-md-end small text-white mt-2 mt-md-0">
-                    <a href="#" class="text-white text-decoration-none me-3">Kebijakan Privasi</a>
-                    <a href="#" class="text-white text-decoration-none">Syarat & Ketentuan</a>
+                    <a href="#" class="text-white text-decoration-none me-3" onclick="switchView('kebijakan-privasi')">Kebijakan Privasi</a>
+                    <a href="#" class="text-white text-decoration-none" onclick="switchView('syarat-ketentuan')">Syarat & Ketentuan</a>                    
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Fungsi Card Product -->
     <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content rounded-4 border-0 shadow-lg">
@@ -757,7 +872,7 @@ Depok, Jawa Barat 16455</p>
                         </div>
                         <div class="col-md-6">
                             <h4 id="productModalHeading" class="fw-bold mb-3"></h4>
-                            <p id="productModalDesc" class="text-white mb-4"></p>
+                            <p id="productModalDesc" class="text-muted mb-4"></p>
                             <button class="btn btn-primary rounded-pill px-4 w-100" data-bs-dismiss="modal" onclick="switchView('contact')">Pesan / Konsultasikan Layanan Ini</button>
                         </div>
                     </div>
