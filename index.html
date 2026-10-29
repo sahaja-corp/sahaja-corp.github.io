@@ -37,12 +37,14 @@
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#" onclick="switchView('profile')">
-                <div class="rounded-3 p-2 me-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 50px; height: 50px;">                    
-                    <img src="img/logo-pavicon-removebg-preview.png" alt="Logo PT. Sahaja Inti Niaga" class="img-fluid" style="object-fit: contain; width: 100%; height: 100%;">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Brand / Logo & Nama Perusahaan (Dibuat flex-nowrap agar sejajar) -->
+            <a class="navbar-brand d-flex align-items-center me-0 flex-nowrap" href="#" onclick="switchView('profile')"     style="max-width: 80%;">
+                <div class="rounded-2 p-1 me-1 d-flex align-items-center justify-content-center shadow-sm flex-shrink-0"    style="width: 32px; height: 32px;">                    
+                    <img src="img/logo-pavicon-removebg-preview.png" alt="Logo PT. Sahaja Inti Niaga" class="img-fluid"     style="object-fit: contain; width: 100%; height: 100%;">
                 </div>
-                <span>PT. SAHAJA INTI NIAGA</span>
+                <!-- Ukuran teks dikecilkans sedikit di mobile (1.2rem) agar aman di layar 360px -->
+                <span class="fw-bold text-truncate" style="font-size: 1.2rem !important;">PT. SAHAJA INTI NIAGA</span>
             </a>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
