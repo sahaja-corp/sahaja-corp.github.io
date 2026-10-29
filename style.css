@@ -96,7 +96,7 @@ body {
             width: calc(100% - 2rem);
         }
 
-html, body {
+html, body , section {
     max-width: 100%;
     overflow-x: hidden;
 }
